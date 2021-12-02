@@ -1,0 +1,35 @@
+<html lang="en">
+
+<link href="../assets/css/main.css" rel="stylesheet" type="text/css" />
+<link href="../assets/css/login.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../scripts/script.js"></script>
+
+<head>
+    <img class="logo-img" src="../assets/img/Earth_recycle.png" alt="XX">
+    <title>Recycle API |
+        <%= title %>
+    </title>
+
+
+</head>
+
+<body class="bg">
+
+    <%- include('partials/nav.ejs') %>
+
+        <div id="login-div">
+            <h1 class="sign-in"> - Sign in - </h1>
+            </br>
+            </br>
+            <h4 class="txt">Username: </h3><input class="login-info" type="text" placeholder="Username">
+                <h4 class="txt">Password: </h3><input class="login-info" type="password" placeholder="Password">
+                    <button id="confirm" type="submit">Confirm</button>
+                    <a id="sign-up" href="/register">Not registered yet?</a>
+
+        </div>
+
+</body>
+
+<%- include('partials/footer') %>
+
+</html>

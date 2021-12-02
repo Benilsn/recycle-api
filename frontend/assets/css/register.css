@@ -1,0 +1,109 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* FIRST-REGISTER-DIV 
+ FIRST-REGISTER-DIV */
+
+#register-div {
+    background-color: rgba(69, 97, 56, 0.8);
+    display: block;
+    height: 610px;
+    width: 550px;
+    left: 400px;
+    bottom: 250px;
+    top: 50px;
+    right: 400px;
+    position: absolute;
+    border-radius: 5%;
+    transition: 1s;
+}
+
+h1.sign-up {
+    position: absolute;
+    left: 130px;
+    top: 2%;
+}
+
+input.register-info {
+    letter-spacing: 1px;
+    height: 30px;
+    width: 250px;
+    transform: translate(180px, 70px);
+}
+
+#next {
+    color: green;
+    position: absolute;
+    bottom: 80px;
+    left: 40%;
+    height: 40px;
+    width: 100px;
+}
+
+#sign-in {
+    text-decoration: underline;
+    position: absolute;
+    left: 180px;
+    bottom: 20px;
+    color: yellow;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+
+/* SECOND-REGISTER-DIV 
+   SECOND-REGISTER-DIV */
+
+#second-register-div {
+    background-color: rgba(69, 97, 56, 0.8);
+    display: none;
+    height: 380px;
+    width: 550px;
+    left: 400px;
+    bottom: 250px;
+    top: 150px;
+    right: 400px;
+    position: absolute;
+    border-radius: 5%;
+    transition: 1s;
+}
+
+h4.txt {
+    color: black;
+    transform: translate(70px, 95px);
+}
+
+h1.account-settings {
+    position: absolute;
+    left: 120px;
+}
+
+h4.account-settings {
+    transform: translate(40px, 100px);
+}
+
+input.account-settings {
+    letter-spacing: 1px;
+    transform: translate(220px, 75px);
+    height: 30px;
+    width: 250px;
+}
+
+#register-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    height: 40px;
+    width: 100px;
+    color: green;
+}
+
+#cancel-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    height: 40px;
+    width: 100px;
+    color: green;
+}

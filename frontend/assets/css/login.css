@@ -1,0 +1,51 @@
+#login-div {
+    background-color: rgba(69, 97, 56, 0.8);
+    display: block;
+    height: 380px;
+    width: 550px;
+    left: 400px;
+    bottom: 250px;
+    top: 150px;
+    right: 400px;
+    position: absolute;
+    border-radius: 5%;
+    transition: 1s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4.txt {
+    color: black;
+    transform: translate(70px, 95px);
+}
+
+h1.sign-in {
+    position: absolute;
+    left: 200px;
+    top: 30px;
+}
+
+input.login-info {
+    letter-spacing: 1px;
+    height: 30px;
+    width: 300px;
+    transform: translate(180px, 70px);
+}
+
+#confirm {
+    color: green;
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    bottom: 80px;
+    left: 40%;
+}
+
+#sign-up {
+    text-decoration: underline;
+    position: absolute;
+    left: 190px;
+    bottom: 20px;
+    color: yellow;
+    cursor: pointer;
+    letter-spacing: 1px;
+}

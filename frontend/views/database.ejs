@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<link href="../assets/css/main.css" rel="stylesheet" type="text/css" />
+<link href="../assets/css/database.css" rel="stylesheet" type="text/css" />
+
+<head>
+    <script src="../scripts/api-consume.js"></script>
+    <img class="logo-img" src="../assets/img/Earth_recycle.png" alt="XX">
+    <title>Recycle API |
+        <%= title %>
+    </title>
+</head>
+
+<body class="bg">
+
+    <%- include('partials/nav.ejs')  %>
+
+        <div id="div-db">
+            <h1 class="db">Users Data:</h1>
+            <table class="db" id="clients"></table>
+        </div>
+
+</body>
+
+<%- include('partials/footer.ejs')  %>
+
+</html>

@@ -1,0 +1,72 @@
+<html lang="en">
+
+<link href="../assets/css/main.css" rel="stylesheet" type="text/css" />
+<link href="../assets/css/register.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../scripts/script.js"></script>
+
+<head>
+    <img class="logo-img" src="../assets/img/Earth_recycle.png" alt="XX">
+    <title>Recycle API |
+        <%= title %>
+    </title>
+
+</head>
+
+<body class="bg">
+
+    <%- include('partials/nav.ejs') %>
+
+        <div id="register-div">
+
+            <button id="next" onclick="checkInfo()">Next</button>
+
+            <form id="register-form" method="post" action="http://localhost:8080/api/v1/client/user-register">
+
+                <h1 class="sign-up">- Create account -</h1>
+                <h4 class="txt">ID : </h3><input id="id-info" name="client_id" class="register-info" type="text"
+                        placeholder="Client ID" name="id">
+                    </br>
+                    </br>
+                    <h4 class="txt">First Name: </h3><input id="fname-info" name="first_name" class="register-info"
+                            type="text" placeholder="First Name">
+                        </br>
+                        </br>
+                        <h4 class="txt">Last Name: </h3><input id="lname-info" name="last_name" class="register-info"
+                                type="text" placeholder="Last Name">
+                            </br>
+                            </br>
+                            <h4 class="txt">Age: </h3><input id="age-info" name="age" class="register-info"
+                                    type="text" placeholder="Age">
+                                </br>
+                                </br>
+                                <h4 class="txt">E-mail: </h3><input id="email-info" name="email"
+                                        class="register-info" type="text" placeholder="E-mail">
+                                    </br>
+                                    </br>
+                                    <a id="sign-in" href="/login">Already have an account?</a>
+        </div>
+        <div id="second-register-div">
+
+            <h1 class="account-settings"> - Account Settings - </h1>
+            <h4 class="account-settings">Username: </h4><input class="account-settings" name="user_name" type="text"
+                placeholder="Username">
+            </br>
+            <h4 class="account-settings">Password: </h4><input class="account-settings" id="pass1" name="user_password"
+                type="password" placeholder="Password">
+            </br>
+            <h4 class="account-settings">Confirm password: </h4><input class="account-settings" id="pass2"
+                type="password" placeholder="Confirm password">
+            </br>
+
+            <button type="submit" id="register-btn" onclick="checkPassword('pass1', 'pass2')">Register</button>
+
+            </form>
+            <button type="submit" id="cancel-btn"
+                onclick="minimize('second-register-div', 'register-div')">Cancel</button>
+        </div>
+
+</body>
+
+<%- include('partials/footer') %>
+
+</html>

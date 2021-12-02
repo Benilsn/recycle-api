@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.bg {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-attachment: fixed;
+}
+
+img.logo-img {
+    float: right;
+    width: 50px;
+    cursor: pointer;
+}
+
+img.menu-img:hover {
+    background-color: red;
+    padding: 10px 10px;
+    width: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a.list {
+    text-decoration: none;
+    color: rgba(248, 248, 248, 0.959);
+    letter-spacing: 2px;
+    padding: 20px 5px;
+    display: block;
+    text-align: center;
+}
+
+a.list:hover {
+    background-color: rgb(82, 151, 88);
+    color: rgb(8, 6, 6);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+nav {
+    background-color: rgba(109, 201, 109, 0.5);
+    height: 600px;
+    width: 250px;
+    left: -250px;
+    position: absolute;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked~nav {
+    transform: translateX(250px);
+}
+
+label {
+    position: absolute;
+    z-index: 1;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+div.copyright {
+    position: relative;
+    padding: 10px 5px;
+    color: rgb(161, 243, 161);
+    transform: translate(0px, 0px);
+}
+
+#reference {
+    color: rgb(226, 223, 12);
+}
